@@ -9,9 +9,9 @@
 
 <nav class="nav">
     <ul>
-      <li><a href="../PrincipalHome/index.html">Inicio</a></li>
-      <li><a href="../PrincipalHome/acerca.html">Acerca</a></li>
-      <li><a href="../PrincipalHome/contacto.html">Contacto</a></li>
+      <li><a href='/Views/PrincipalHome/index.html'>Inicio</a></li>
+      <li><a href='/Views/PrincipalHome/acerca.html'>Acerca</a></li>
+      <li><a href='/Views/PrincipalHome/contacto.html'>Contacto</a></li>
     </ul>
 </nav>
   <!-- FIN NAVBAR -->
