@@ -1,22 +1,17 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Casita :3 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Secretarias Admin</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Manes de Mantenimiento</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
-    </div>
+  <!-- INICIO NAVBAR -->
+  <!-- partial:index.partial.html -->
+  <input type="checkbox" id="menu" />
+<label for="menu" class="menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<nav class="nav">
+    <ul>
+      <li><a href="../PrincipalHome/index.html">Inicio</a></li>
+      <li><a href="../PrincipalHome/acerca.html">Acerca</a></li>
+      <li><a href="../PrincipalHome/contacto.html">Contacto</a></li>
+    </ul>
 </nav>
+  <!-- FIN NAVBAR -->

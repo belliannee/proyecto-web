@@ -10,6 +10,6 @@ class PrincipalHomeController
 
     function index()
     {
-        require_once('Views/PrincipalHome/index.php');
+        require_once('Views/PrincipalHome/index.html');
     }
 }
