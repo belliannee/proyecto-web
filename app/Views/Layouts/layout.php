@@ -4,14 +4,17 @@
 <head>
     <title>Secretaría Administrativa - FISC</title>
     <meta charset="utf-8">
+    <!-- CSS de Bootstrap -->
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link href="bootstrap/css/dashboard.css" rel="stylesheet">
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../../resources/css/acerca.css" rel="stylesheet">
 </head>
 
 <body>
 <header>
-    <?php require_once('menu.php'); ?>
+    <?php require('menu.php'); ?>
 </header>
 <div class="container-fluid">
     <div class="row">

@@ -2,7 +2,7 @@
 
 
 $controllers = array(
-    'PrincipalHome' => ['index.html'],
+    'PrincipalHome' => ['index', 'acerca', 'contacto'],
     'SecretariaAdministrativa' => ['IndexSA', 'add', 'save'],
     'MainSecretariaAdministrativa' => ['IndexSAP'],
     'Mantenimiento' => ['IndexM']
