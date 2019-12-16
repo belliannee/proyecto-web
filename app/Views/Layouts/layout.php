@@ -4,6 +4,9 @@
 <head>
     <title>Secretaría Administrativa - FISC</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- CSS de Bootstrap -->
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
