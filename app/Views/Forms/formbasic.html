@@ -23,13 +23,29 @@
 <form action="" method="POST" class="needs-validation form_basic_style" novalidate>
   <div class="container">
 <h4 class="mb-3">Datos Personales</h4>
-<div class="row">
-  <div class="col-md-4">
-    <input type="text" class="form-control" placeholder="Nombre" id="nombre_db">
+  <div class="row">
+    <div class="col-md-6">
+      <input type="text" class="form-control" id="nombre_db" placeholder="Nombre">
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" id="apellido_db" placeholder="Apellido">
+    </div>
   </div>
+  <br/>
+  <div class="row">
   <div class="col-md-4">
     <input type="text" class="form-control" placeholder="Cedula" id="cedula_db">
   </div>
+</div>
+<br/>
+<div class="form-group">
+  <label for="exampleFormControlInput1">Correo Electronico</label>
+  <input type="email" class="form-control" id="correo_electronico" placeholder="name@example.com">
+</div>
+<br/>
+<div class="form-group">
+  <label for="formGroupExampleInput">Fecha de Reporte</label>
+  <input type="date" class="form-control" id="date_reporte">
 </div>
 </div>
 <br/>
@@ -93,7 +109,7 @@
       </div>
           
                       <br/>
-                    <div class="form-group col-sm-4">
+                    <div class="form-group">
                         <select id="ubi_numsalon" class="form-control">
                           <option selected>Numero de Salon</option>
                           <option>3-231</option>
@@ -183,54 +199,12 @@
           </table>
       </p>
   </div>
-  <div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <label for="formGroupExampleInput">Inspección efectuada por:</label>
-      <input type="text" class="form-control" id="nombre_efectuado" placeholder="Nombre">
-    </div>
-  </div>
-  <br/>
-    <div class="form-group">
-      <label for="formGroupExampleInput">Obvervaciones</label>
-        <textarea class="form-control" id="observacion_efect" rows="3"></textarea>
-        </div>
-      <br/>
-      <h4 class="mb-3">Ejecución del Servicio</h4>
-
-      <div class="form-group">
-        <label for="formGroupExampleInput">Obvervaciones</label>
-        <textarea class="form-control" id="observacion_ejec" rows="3"></textarea>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <label for="formGroupExampleInput">Trabajo realizado por:</label>
-            <input type="text" class="form-control" id="nombre_trab" placeholder="Nombre">
-          </div>
-        </div>
-      </div>
-      <br/>
-        <h4 class="mb-3">Ejecución del Servicio</h4>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <label for="formGroupExampleInput">Recibido por:</label>
-              <input type="text" class="form-control" id="nombre_recib" placeholder="Nombre">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="formGroupExampleInput">Fecha de Entrega</label>
-              <input type="date" class="form-control" id="date_entrega">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput">Obvervaciones</label>
-            <textarea class="form-control" id="observacion_servicio" rows="3"></textarea>
-            </div>
-        </div>
         <br/>
-  <button class="btn btn-primary" type="submit">Enviar Solicitud</button>
+        <div class="row">
+ <button class="btn btn-primary" type="submit">Enviar Solicitud</button>
+
+        </div>
+ 
  
 
 </form>
