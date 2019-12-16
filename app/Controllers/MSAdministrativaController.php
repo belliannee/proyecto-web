@@ -12,10 +12,10 @@ class MSAdministrativaController
 
 	}
 
-	function index(){
+	function IndexSAP(){
 		$msadministrativa = new MSAdministrativaModel();
 		$datos = $msadministrativa->listar();
-		require_once('Views/MainSecretariaAdministrativa/IndexSAP.php');
+		require_once('Views/MSAdministrativa/IndexSAP.php');
 	}
 
 }

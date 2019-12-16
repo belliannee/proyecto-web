@@ -4,7 +4,7 @@
 $controllers = array(
     'PrincipalHome' => ['index', 'acerca', 'contacto'],
     'SecretariaAdministrativa' => ['IndexSA', 'add', 'save'],
-    'MainSecretariaAdministrativa' => ['IndexSAP'],
+    'MSAdministrativa' => ['IndexSAP'],
     'Mantenimiento' => ['IndexM']
 );
 
@@ -27,7 +27,7 @@ function call($controller, $action)
         case 'PrincipalHome':
             $controller = new PrincipalHomeController();
             break;
-        case 'MainSecretariaAdministrativa':
+        case 'MSAdministrativa':
             $controller = new MSAdministrativaController();
             break;
         case 'SecretariaAdministrativa':

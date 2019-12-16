@@ -12,6 +12,7 @@
       <li><a href="?controller=PrincipalHome&action=index">Inicio</a></li>
       <li><a href="?controller=PrincipalHome&action=acerca">Acerca</a></li>
       <li><a href="?controller=PrincipalHome&action=contacto">Contacto</a></li>
+      <li><a href="?controller=MSAdministrativa&action=IndexSAP">Reportes</a></li>
     </ul>
 </nav>
   <!-- FIN NAVBAR -->

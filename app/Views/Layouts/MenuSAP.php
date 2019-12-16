@@ -9,10 +9,10 @@
 
 <nav class="nav">
     <ul>
-      <li><a href="../PrincipalHome/index.html">Inicio</a></li>
-      <!--<li><a href="../PrincipalHome/acerca.html">Acerca</a></li>-->
-      <li><a href="../PrincipalHome/contacto.html">Contacto</a></li>
-
+      <li><a href="?controller=PrincipalHome&action=index">Inicio</a></li>
+      <li><a href="?controller=PrincipalHome&action=acerca">Acerca</a></li>
+      <li><a href="?controller=PrincipalHome&action=contacto">Contacto</a></li>
+      <li><a href="?controller=MSAdministrativa&action=IndexSAP">Reportes</a></li>
       
     </ul>
 </nav>

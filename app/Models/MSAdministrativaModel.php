@@ -8,7 +8,7 @@ class MSAdministrativaModel{
         $this->msadministrativa = array();
     }
     public function listar(){
-        $consulta = $this->db->query("select * from usuarios;");
+        $consulta = $this->db->query("select * from solicitud_reporte;");
         while($registros = $consulta->fetch_assoc()){
             $this->msadministrativa[] = $registros;
         }
