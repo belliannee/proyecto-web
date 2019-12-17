@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<title>Inicio de sesión</title>
 	<meta charset="UTF-8">
@@ -30,7 +30,7 @@
 					<img src="/resources/images/utp.jpg" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" method="post" action="/Controllers/LoginController.php">
+				<form class="login100-form validate-form" method="post" action="?controller=Login&action=login">
 					<span class="login100-form-title">
 						Inicio de sesión
 					</span>

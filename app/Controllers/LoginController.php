@@ -1,8 +1,7 @@
-<?php 
-/**
-* 
-*/
-//require_once('Models/MSAdministrativaModel.php');
+<?php
+session_start();
+require_once ('Models/LoginModel.php');
+require_once ('index.php');
 
 class LoginController
 {
@@ -15,7 +14,7 @@ class LoginController
 	function login(){
 	//	$login = new MSAdministrativaModel();
     //  $datos = $msadministrativa->listar();
-        
+        require_once('Views/Login/index.html'); 
 
         $correo = $_POST['email'];
         $password = $_POST['password'];
@@ -32,9 +31,7 @@ class LoginController
             require_once('Views/Login/contacto.html');  //?????
             echo "que chucha ???????????";
         }	
-        
-        
-        //require_once('Views/Login/index.html');  //?????
+
 	}
 
 }

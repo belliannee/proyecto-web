@@ -5,7 +5,8 @@ $controllers = array(
     'PrincipalHome' => ['index', 'acerca', 'contacto'],
     'SecretariaAdministrativa' => ['IndexSA', 'add', 'save'],
     'MSAdministrativa' => ['IndexSAP'],
-    'Mantenimiento' => ['IndexM']
+    'Mantenimiento' => ['IndexM'],
+    'Login' => ['login']
 );
 
 if (array_key_exists($controller, $controllers)) {
@@ -35,6 +36,9 @@ function call($controller, $action)
             break;
         case 'Mantenimiento':
             $controller = new MantenimientoController();
+            break;
+        case 'Login':
+            $controller = new LoginController();
             break;
         default:
             # código...
