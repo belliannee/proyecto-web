@@ -20,32 +20,32 @@
   <p class="lead">Este es el formulario de solicitud de mantenimiento para reparaciones generales.</p>
 </div>
 
-<form action="" method="POST" class="needs-validation form_basic_style" novalidate>
+<form action="?controller=MSAdministrativa&action=formulario" method="POST" class="needs-validation form_basic_style" novalidate>
   <div class="container">
 <h4 class="mb-3">Datos Personales</h4>
   <div class="row">
     <div class="col-md-6">
-      <input type="text" class="form-control" id="nombre_db" placeholder="Nombre">
+      <input type="text" class="form-control" id="nombre_db" placeholder="Nombre" required/>
     </div>
     <div class="col-md-6">
-      <input type="text" class="form-control" id="apellido_db" placeholder="Apellido">
+      <input type="text" class="form-control" id="apellido_db" placeholder="Apellido" required/>
     </div>
   </div>
   <br/>
   <div class="row">
   <div class="col-md-4">
-    <input type="text" class="form-control" placeholder="Cedula" id="cedula_db">
+    <input type="text" class="form-control" placeholder="Cedula" id="cedula_db" required/>
   </div>
 </div>
 <br/>
 <div class="form-group">
   <label for="exampleFormControlInput1">Correo Electronico</label>
-  <input type="email" class="form-control" id="correo_electronico" placeholder="nombre.apellido@utp.ac.pa">
+  <input type="email" class="form-control" id="correo_electronico" placeholder="nombre.apellido@utp.ac.pa" required/>
 </div>
 <br/>
 <div class="form-group">
   <label for="formGroupExampleInput">Fecha de Reporte</label>
-  <input type="date" class="form-control" id="date_reporte">
+  <input type="date" class="form-control" value="yyyy-mm-dd" id="date_reporte" required/>
 </div>
 </div>
 <br/>
@@ -57,7 +57,7 @@
   <div class="row">
 
       <div class="form-group col-sm-4">
-          <select id="tipo_daño" class="form-control">
+          <select id="tipo_dano" class="form-control" required>
             <option selected>Tipo de Daño</option>
             <option>infraestructura</option>
             <option>Aire Acondicionado</option>
@@ -72,14 +72,14 @@
 <h4 class="mb-3">Descripción del Problema</h4>
 <div class="container">
     <div class="form-group">
-        <textarea class="form-control" id="descripcion_daño" rows="3"></textarea>
+        <textarea class="form-control" id="descripcion_dano" rows="3" maxlength="45"></textarea>
         </div>
       </div>
 <br/>
   <h4 class="mb-3">Ubicación</h4>
   <div class="container">
     <div class="form-group">
-      <select id="ubi_edficio" class="form-control">
+      <select id="ubi_edficio" class="form-control" required>
         <option selected>Edificio</option>
         <option>Edificio 1</option>
         <option>Edificio 3</option>
@@ -89,7 +89,7 @@
     </div>
 
     <div class="form-group">
-      <select id="ubi_planta" class="form-control">
+      <select id="ubi_planta" class="form-control" required>
         <option selected>Planta</option>
         <option>Planta Baja</option>
         <option>Piso 1</option>
@@ -99,7 +99,7 @@
     </div>
 
     <div class="form-group">
-        <select id="ubi_area" class="form-control">
+        <select id="ubi_area" class="form-control" required>
           <option selected>Area</option>
           <option>Salon de Clase</option>
           <option>Laboratorio</option>
@@ -110,7 +110,7 @@
           
                       <br/>
                     <div class="form-group">
-                        <select id="ubi_numsalon" class="form-control">
+                        <select id="ubi_numsalon" class="form-control" required>
                           <option selected>Numero de Salon</option>
                           <option>3-231</option>
                           <option>3-212</option>
@@ -121,15 +121,15 @@
   </div>
 
   <br/>
-  <br/>
+<!--   <br/>
   <h4 class="mb-3">Pre-elaboración</h4>
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <input type="text" class="form-control" id="tecnicofi" placeholder="Técnico Asignado 1">
+        <input type="text" class="form-control" id="tecnicofi" placeholder="Técnico Asignado 1" required/> 
       </div>
       <div class="col-md-4">
-        <input type="text" class="form-control" id="tecnicose" placeholder="Técnico Asignado 2">
+        <input type="text" class="form-control" id="tecnicose" placeholder="Técnico Asignado 2" required/>
       </div>
     </div>
 
@@ -137,14 +137,14 @@
     <div class="row">
       <div class="col-md-6">
         <label for="formGroupExampleInput">Inspección efectuada por:</label>
-        <input type="text" class="form-control" id="nombre_inspec" placeholder="Nombre">
+        <input type="text" class="form-control" id="nombre_inspec" placeholder="Nombre" required/>
       </div>
     </div>
 <br/>
     <div class="row">
       <div class="col-md-6">
         <label for="formGroupExampleInput">Fecha de Inspección</label>
-        <input type="date" class="form-control" id="date_inspec">
+        <input type="date" class="form-control" id="date_inspec" required/>
       </div>
     </div>
   </div>
@@ -198,19 +198,17 @@
               </tr>
           </table>
       </p>
-  </div>
+  </div> -->
         <br/>
         <div class="row">
- <button class="btn btn-primary" type="submit">Enviar Solicitud</button>
+          <input type="submit" value="Enviar"  onclick="confirm('<? echo $resultado ?>')" class="btn btn-primary">
+ <a class="btn btn-primary" href="/?controller=PrincipalHome&action=index">Enviar Solicitud</a>
 
         </div>
  
- 
-
 </form>
 
-
-      <!-- Librería jQuery requerida por los plugins de JavaScript -->
+<!-- Librería jQuery requerida por los plugins de JavaScript -->
       <script src="http://code.jquery.com/jquery.js"></script>
 
       <!-- Todos los plugins JavaScript de Bootstrap -->

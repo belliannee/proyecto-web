@@ -59,20 +59,13 @@ CREATE TABLE IF NOT EXISTS `secretaria_administrativa`.`solicitud_reporte` (
   `cedula_db` VARCHAR(45) NOT NULL,
   `correo_electronico` VARCHAR(45) NOT NULL,
   `date_reporte` DATE NOT NULL,
-  `descripcion_dano` VARCHAR(45) NOT NULL,
+  `descripcion_dano` VARCHAR(420) NOT NULL,
   `tipo_dano` VARCHAR(45) NOT NULL,
-  `idusuarios` INT NULL,
   `ubi_edificio` VARCHAR(45) NOT NULL,
   `ubi_planta` VARCHAR(45) NOT NULL,
   `ubi_area` VARCHAR(45) NOT NULL,
   `ubi_numsalon` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`idformulario_reporte`),
-  INDEX `idusuarios_idx` (`idusuarios` ASC),
-  CONSTRAINT `idusuarios`
-    FOREIGN KEY (`idusuarios`)
-    REFERENCES `secretaria_administrativa`.`usuarios` (`idusuarios`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  PRIMARY KEY (`idformulario_reporte`))
 ENGINE = InnoDB;
 
 
@@ -201,7 +194,6 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `secretaria_administrativa`;
-INSERT INTO `secretaria_administrativa`.`solicitud_reporte` (`idformulario_reporte`, `nombre_db`, `apellido_db`, `cedula_db`, `correo_electronico`, `date_reporte`, `descripcion_dano`, `tipo_dano`, `idusuarios`, `ubi_edificio`, `ubi_planta`, `ubi_area`, `ubi_numsalon`) VALUES (DEFAULT, 'Félix', 'Saldaña', '8-940-610', 'felix.saldaña@utp.ac.pa', '2019-12-15', 'La fuente no deja de botar agua.', 'Plomeria', 4, 'Edificio 3', 'Piso 1', 'Laboratorio', '');
 
 COMMIT;
 

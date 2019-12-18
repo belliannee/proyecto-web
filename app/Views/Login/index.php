@@ -36,7 +36,7 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: nombre.apellido@utp.ac.pa">
-						<input class="input100" type="email" name="email" id="email" placeholder="correo electrónico">
+						<input class="input100" type="email" name="email" id="email" placeholder="nombre.apellido@utp.ac.pa">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -61,7 +61,7 @@
 						<span class="txt1">
 							Forgot
 						</span>
-						<a class="txt2" href="#">
+						<a class="txt2" href="/?controller=PrincipalHome&action=contacto">
 							Username / Password?
 						</a>
 					</div>
