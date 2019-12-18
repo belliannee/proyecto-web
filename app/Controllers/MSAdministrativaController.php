@@ -21,7 +21,7 @@ class MSAdministrativaController
 
 	function formulario(){
 
-		require_once("Views/Forms/formbasic.php");
+	//	require_once("Views/Forms/formbasic.php");
 
 		//datos
 		$nombre = $_POST['nombre_db'];
@@ -38,7 +38,16 @@ class MSAdministrativaController
 
 		
 		$agregar = new MSAdministrativaModel();
-		$agregar->agregarF($nombre,$apellido,$cedula,$email,$date,$tipo,$descripcion,$edificio,$planta,$area,$salon);
+		$datos = $agregar->agregarF($nombre,$apellido,$cedula,$email,$date,$tipo,$descripcion,$edificio,$planta,$area,$salon);
+		
+		if($datos===true){
+			header("location:?controller=PrincipalHome&&action=exito");
+		}
+		else{
+			header("location:?controller=PrincipalHome&&action=index");
+		}
+
+	
 	}
 
 }

@@ -16,9 +16,17 @@ class MSAdministrativaModel{
     }
     public function agregarF($nombre,$apellido,$cedula,$email,$date,$tipo,$descripcion,$edificio,$planta,$area,$salon){
         $insertar = "INSERT INTO solicitud_reporte (nombre_db, apellido_db, cedula_db, correo_electronico, date_reporte, tipo_dano, descripcion_dano, ubi_edificio, ubi_planta, ubi_area, ubi_numsalon)
-		VALUES ('$nombre','$apellido','$cedula','$email','$date','$tipo','$descripcion','$edificio','$planta','$area','$salon')";
+		VALUES ('$nombre','$apellido','$cedula','$email','$date','$tipo','$descripcion','$edificio','$planta','$area','$salon');";
 
-		$this->db->query($insertar);
+        $resultado = $this->db->query($insertar);
+        
+
+        if($resultado===true){
+            return $datos = true;
+        }
+        else{
+            return $datos = false;
+        }
 
 		/* if (!$resultado) {
 				$mensaje  = 'Inserción no válida: ' . mysql_error() . "\n";

@@ -20,4 +20,8 @@ class PrincipalHomeController
     {
         require_once('Views/PrincipalHome/contacto.html');
     }
+    function exito()
+    {
+        require_once('Views/Forms/exito.php');
+    }
 }

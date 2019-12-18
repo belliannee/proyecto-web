@@ -202,7 +202,7 @@
   </div> -->
         <br/>
         <div class="row" style="margin-left:40%">
-          <input type="submit" value="Enviar"  onclick="confirm('<? echo 'Desea enviar los datos?' ?>')" class="btn btn-primary">
+          <input type="submit" value="Enviar" href="?controller=MSAdministrativa&action=formulario" class="btn btn-primary">
           <a class="btn btn-primary" href="/?controller=PrincipalHome&action=index" style="margin-left:5%">Volver</a>
 
         </div>
