@@ -24,7 +24,7 @@ MySQL/undo_002
 
 MySQL/binlog.*
 
-MySQL/binlog.index
+MySQL/binlog.index  
 MySQL/client-key.pem
 MySQL/private_key.pem
 MySQL/server-key.pem
