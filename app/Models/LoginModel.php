@@ -8,7 +8,7 @@ class LoginModel
     {
         $this->db = Conexion::conectar();
     }
-
+ 
     public function iniciarSesion($correo,$password){
 
         if (isset($_POST['email']) && isset($_POST['password'])){

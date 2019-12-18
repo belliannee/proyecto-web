@@ -38,7 +38,7 @@
 <br/>
 <div class="form-group">
   <label for="formGroupExampleInput">Direccion</label>
-  <input type="text" class="form-control" maxlength="45" id="date_reporte" required/>
+  <input type="text" class="form-control" maxlength="45" id="direccion" required/>
 </div>
 <br/>
 <div class="form-group">

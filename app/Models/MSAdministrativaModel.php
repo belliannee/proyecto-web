@@ -31,13 +31,4 @@ class MSAdministrativaModel{
         return $mensaje; */
     }
 }
-
-
-
-
-
-
-
-
-
 ?>

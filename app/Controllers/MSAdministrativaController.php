@@ -20,7 +20,9 @@ class MSAdministrativaController
 	}
 
 	function formulario(){
-		
+
+		require_once("Views/Forms/formbasic.php");
+
 		//datos
 		$nombre = $_POST['nombre_db'];
 		$apellido = $_POST['apellido_db'];
@@ -37,8 +39,6 @@ class MSAdministrativaController
 		
 		$agregar = new MSAdministrativaModel();
 		$agregar->agregarF($nombre,$apellido,$cedula,$email,$date,$tipo,$descripcion,$edificio,$planta,$area,$salon);
-		require_once("Views/Forms/formbasic.php");
-
 	}
 
 }

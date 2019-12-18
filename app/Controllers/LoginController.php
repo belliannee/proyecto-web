@@ -1,7 +1,6 @@
 <?php
 /* session_start();*/
-require_once ('Models/LoginModel.php');
-require_once ('index.php');
+require_once('Models/LoginModel.php');
  
 class LoginController
 {

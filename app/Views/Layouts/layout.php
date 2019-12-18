@@ -35,7 +35,10 @@
 </div>
 <br><br1><br><br>
 <footer>
-    <?php require('Views/footer/index.html'); ?>
+    <?php
+       // if(header("Location: ?controller=PrincipalHome&action=index") || header("Location: ?controller=PrincipalHome&action=acerca" || header("Location: ?controller=PrincipalHome&action=contacto")))
+        require('Views/footer/index.html'); 
+    ?>
 </footer>
 
 </body>

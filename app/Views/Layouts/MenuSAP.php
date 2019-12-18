@@ -9,8 +9,8 @@
 
 <nav class="nav">
     <ul>
-    <li><a href="?controller=SecretariaAdministrativa&action=index">Crear Usuario</a></li>
-    <li><a href="?controller=MSAdministrativa&action=IndexSAP">Reportes</a></li>      
+    <li><a href="?controller=SecretariaAdministrativa&action=IndexSA">Crear Usuario</a></li>
+    <li><a href="?controller=MSAdministrativa&action=IndexSAP">Reportes</a></li>
     </ul>
 </nav>
   <!-- FIN NAVBAR -->

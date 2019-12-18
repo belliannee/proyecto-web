@@ -2,7 +2,7 @@
 /**
 * 
 */
-//require_once('Models/SecretariaAdministrativaModel.php');
+require_once('Models/SecretariaAdministrativaModel.php');
 
 class SecretariaAdministrativaController
 {
@@ -14,6 +14,18 @@ class SecretariaAdministrativaController
 
 	function IndexSA(){
 		require_once('Views/SecretariaAdministrativa/IndexSA.php');
+
+		$nombre = $_POST['name'];
+		$apellido = $_POST['lastname'];
+		$cedula = $_POST['cedula'];
+		$direccion = $_POST['direccion']
+		$email = $_POST['correo_electronico'];
+		$password = $_POST['password'];
+		$telefono = $_POST['telefono'];
+		$rol = $_POST['rol'];
+		
+		$agregar = new SecretariaAdministrativaModel();
+		$agregar->crearUsuario($nombre,$apellido,$cedula,$direccion,$email,$password,$telefono,$rol);
 	}
 
 }
