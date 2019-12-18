@@ -20,6 +20,12 @@ class PrincipalHomeController
     {
         require_once('Views/PrincipalHome/contacto.html');
     }
+    function form(){
+        require_once('Views/Forms/formbasic.php');
+    }
+    function login(){
+        require_once('Views/Login/index.php');
+    }
     function exito()
     {
         require_once('Views/Forms/exito.php');

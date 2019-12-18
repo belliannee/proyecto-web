@@ -2,7 +2,7 @@
 
 
 $controllers = array(
-    'PrincipalHome' => ['index', 'acerca', 'contacto', 'exito'],
+    'PrincipalHome' => ['index', 'acerca', 'contacto','form','login', 'exito'],
     'SecretariaAdministrativa' => ['IndexSA'],
     'MSAdministrativa' => ['IndexSAP', 'formulario'],
     'Login' => ['login']

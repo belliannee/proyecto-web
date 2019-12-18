@@ -23,43 +23,43 @@
 <h4 class="mb-3">Datos</h4>
   <div class="row">
     <div class="col-md-6">
-      <input type="text" class="form-control" id="name" placeholder="Nombre" required/>
+      <input type="text" class="form-control" name="name" placeholder="Nombre" required/>
     </div>
     <div class="col-md-6">
-      <input type="text" class="form-control" id="lastname" placeholder="Apellido" required/>
+      <input type="text" class="form-control" name="lastname" placeholder="Apellido" required/>
     </div>
   </div>
   <br/>
   <div class="row">
   <div class="col-md-4">
-    <input type="text" class="form-control" placeholder="Cedula" id="cedula" required/>
+    <input type="text" class="form-control" placeholder="Cedula" name="cedula" required/>
   </div>
 </div>
 <br/>
 <div class="form-group">
   <label for="formGroupExampleInput">Direccion</label>
-  <input type="text" class="form-control" maxlength="45" id="direccion" required/>
+  <input type="text" class="form-control" maxlength="45" name="direccion" required/>
 </div>
 <br/>
 <div class="form-group">
   <label for="exampleFormControlInput1">Correo Electronico</label>
-  <input type="email" class="form-control" id="correo_electronico" placeholder="nombre.apellido@utp.ac.pa" required/>
+  <input type="email" class="form-control" name="correo_electronico" placeholder="nombre.apellido@utp.ac.pa" required/>
 </div>
 <br/>
 <div class="form-group">
   <label for="formGroupExampleInput">Contraseña</label>
-  <input type="password" class="form-control" placeholder="password" id="password" required/>
+  <input type="password" class="form-control" placeholder="password" name="password" required/>
 </div>
 <br/>
 <div class="form-group">
   <label for="formGroupExampleInput">Telefono</label>
-  <input type="number" class="form-control" placeholder="telefono celular, sin guiones" min=60000000 max=69999999 id="telefono" required/>
+  <input type="number" class="form-control" placeholder="telefono celular, sin guiones" min=60000000 max=69999999 name="telefono" required/>
 </div>
 <br/>
 <h4 class="mb-3">Rol</h4>
   <div class="container">
     <div class="form-group">
-      <select id="rol" class="form-control" required>
+      <select name="rol" class="form-control" required>
         <option selected>Secretaria Administrativa Principal</option>
         <option>Secretaria Administrativa</option>
       </select>

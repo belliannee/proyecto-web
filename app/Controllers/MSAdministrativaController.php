@@ -2,6 +2,7 @@
 /**
 * 
 */
+ob_start();
 require_once('Models/MSAdministrativaModel.php');
 
 class MSAdministrativaController

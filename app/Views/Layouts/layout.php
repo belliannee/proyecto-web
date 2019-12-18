@@ -1,3 +1,6 @@
+<?php
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -18,7 +21,7 @@
 <body>
 <header>
     <?php
-        $resultado1=$_GET["rol"];
+        $resultado=$_GET["rol"];
         
         if ($resultado == 4)
             require_once('menuSAP.php');
@@ -34,12 +37,12 @@
     </div>
 </div>
 <br><br1><br><br>
-<footer>
+<!-- <footer>
     <?php
        // if(header("Location: ?controller=PrincipalHome&action=index") || header("Location: ?controller=PrincipalHome&action=acerca" || header("Location: ?controller=PrincipalHome&action=contacto")))
-        require('Views/footer/index.html'); 
+       // require('Views/footer/index.html'); 
     ?>
-</footer>
+</footer> -->
 
 </body>
 

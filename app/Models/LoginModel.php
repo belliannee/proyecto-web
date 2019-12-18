@@ -21,6 +21,7 @@ class LoginModel
                 $query2 = mysqli_query( $this->db, "SELECT idRoles FROM usuarios WHERE correo_electronico = '".$correo."' AND password= '".$password."'");
                 $query2 = mysqli_fetch_array($query2, MYSQLI_ASSOC);
                 $rol = $query2['idRoles'];
+                $_SESSION = $rol;
 
                 if($rol==4)
                     header("Location: ?controller=MSAdministrativa&action=IndexSAP");
@@ -28,8 +29,10 @@ class LoginModel
                     header("Location: ?controller=MSAdministrativa&action=IndexSAP");
             }
             else{
-
+                header("Location: ?controller=HomePrincipal&action=index");
             }
+
+            return $rol;
         }
     }
 }

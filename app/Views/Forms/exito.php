@@ -32,9 +32,10 @@
 </style>
 </head>
 <body>
-<div class="alert succes">
+<div class="alert.succes">
   <span class="closebtn">&times;</span>
   Consulta exitosa.
+<br>
 </div> 
 <a class="btn btn-primary" href="/?controller=PrincipalHome&action=index">Volver</a>
 </body>
