@@ -34,10 +34,10 @@ class MSAdministrativaController
 		$area = $_POST['ubi_area'];
 		$salon = $_POST['ubi_numsalon'];
 
-		//rol
+		
 		$agregar = new MSAdministrativaModel();
-		$resultado = $agregar->agregarF($nombre,$apellido,$cedula,$email,$date,$tipo,$descripcion,$edificio,$planta,$area,$salon);
-		require_once("Views/MSAdministrativa/IndexSAP.php");
+		$agregar->agregarF($nombre,$apellido,$cedula,$email,$date,$tipo,$descripcion,$edificio,$planta,$area,$salon);
+		require_once("Views/Forms/formbasic.php");
 
 	}
 

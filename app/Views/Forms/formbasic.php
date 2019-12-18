@@ -13,6 +13,7 @@
 </head>
 
 <body class="bg-light">
+<a class="btn btn-primary" href="/?controller=PrincipalHome&action=index" style="float:right; margin:5%">Volver</a>
   <div class="container">
 <div class="py-5 text-center">
   <img class="d-block mx-auto mb-4" src="../../resources/images/utp.jpg" alt="" width="72" height="72">

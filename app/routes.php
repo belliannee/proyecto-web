@@ -3,9 +3,8 @@
 
 $controllers = array(
     'PrincipalHome' => ['index', 'acerca', 'contacto'],
-    'SecretariaAdministrativa' => ['IndexSA', 'add', 'save'],
+    'SecretariaAdministrativa' => ['IndexSA'],
     'MSAdministrativa' => ['IndexSAP', 'formulario'],
-    'Mantenimiento' => ['IndexM'],
     'Login' => ['login']
 );
 

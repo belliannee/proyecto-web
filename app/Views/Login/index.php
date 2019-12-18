@@ -52,21 +52,22 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button type="submit" class="login100-form-btn">
 							Login
 						</button>
 					</div>
 
 					<div class="text-center p-t-12">
-						<span class="txt1">
-							Forgot
-						</span>
-						<a class="txt2" href="/?controller=PrincipalHome&action=contacto">
-							Username / Password?
-						</a>
+					<a class="login100-form-btn" href="/?controller=PrincipalHome&action=index"> Volver</a>
 					</div>
-
+					
 				</form>
+				<?php
+                if ($resultado1=="Correo o contraseña incorrectos."){
+                    echo '<script language="javascript">alert("Correo o contraseña incorrectos.");</script>';
+                }
+
+                ?>
 			</div>
 		</div>
 	</div>

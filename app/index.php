@@ -5,6 +5,7 @@ require_once("Db/db.php"); //Se incluye el archivo que contiene la conexión a l
 if (isset($_GET['controller']) && isset($_GET['action'])) { // Si hay un controlador y acción (método) definido...
     $controller = $_GET['controller'];
     $action = $_GET['action'];
+    $rol = $_GET['rol'];
 } else { //Si no se ha definido un controlador y acción (caso cuando se accede la primera vez en la sesión)
     $controller = 'PrincipalHome';
     $action = 'index';

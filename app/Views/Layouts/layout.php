@@ -17,7 +17,16 @@
 
 <body>
 <header>
-    <?php require('menu.php'); ?>
+    <?php
+        $resultado1=$_GET["rol"];
+        
+        if ($resultado == 4)
+            require_once('menuSAP.php');
+        elseif($resultado == 5)
+            require_once('menuSA.php');
+        else
+            require('menu.php');
+    ?>
 </header>
 <div class="container-fluid">
     <div class="row">

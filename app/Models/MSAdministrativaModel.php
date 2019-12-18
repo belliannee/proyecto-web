@@ -18,9 +18,9 @@ class MSAdministrativaModel{
         $insertar = "INSERT INTO solicitud_reporte (nombre_db, apellido_db, cedula_db, correo_electronico, date_reporte, tipo_dano, descripcion_dano, ubi_edificio, ubi_planta, ubi_area, ubi_numsalon)
 		VALUES ('$nombre','$apellido','$cedula','$email','$date','$tipo','$descripcion','$edificio','$planta','$area','$salon')";
 
-		$resultado = $this->db->query($insertar);
+		$this->db->query($insertar);
 
-		if (!$resultado) {
+		/* if (!$resultado) {
 				$mensaje  = 'Inserción no válida: ' . mysql_error() . "\n";
 				$mensaje .= 'Inserción completa: ' . $insertar;
 				die($mensaje);
@@ -28,7 +28,7 @@ class MSAdministrativaModel{
 			else{
 				$mensaje  = 'Inserción Exitosa uwu';
         }
-        return $mensaje;
+        return $mensaje; */
     }
 }
 

@@ -2,7 +2,7 @@
 /**
 * 
 */
-require_once('Models/SecretariaAdministrativaModel.php');
+//require_once('Models/SecretariaAdministrativaModel.php');
 
 class SecretariaAdministrativaController
 {
@@ -12,9 +12,7 @@ class SecretariaAdministrativaController
 
 	}
 
-	function index(){
-		$secretariaadministrativa = new SecretariaAdministrativaModel();
-		$datos = $secretariaadministrativa->listar();
+	function IndexSA(){
 		require_once('Views/SecretariaAdministrativa/IndexSA.php');
 	}
 

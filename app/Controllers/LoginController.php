@@ -1,8 +1,8 @@
 <?php
-session_start();
+/* session_start();*/
 require_once ('Models/LoginModel.php');
 require_once ('index.php');
-
+ 
 class LoginController
 {
 
@@ -14,23 +14,14 @@ class LoginController
 	function login(){
 	//	$login = new MSAdministrativaModel();
     //  $datos = $msadministrativa->listar();
-        require_once('Views/Login/index.html'); 
+        require_once('Views/Login/index.php'); 
 
         $correo = $_POST['email'];
         $password = $_POST['password'];
-
-        $conexion = db::conectar(); 
-        $consulta1 = $conexion->prepare('select*from usuarios where correo_electronico:=correo_electronico');   
-        $consulta1->bindValue('correo_electronico',$correo);
-        $consulta1->execute();
-
-        $registro=$consulta1->fecth();
-
-        if (password_verify($password, $registro['password'])) {
-            
-            require_once('Views/Login/contacto.html');  //?????
-            echo "que chucha ???????????";
-        }	
+        $_SESSION['email']=$_POST['email'];
+        
+        $loggear = new LoginModel();
+        $loggear-> iniciarSesion($correo, $password);
 
 	}
 
