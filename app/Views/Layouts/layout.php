@@ -24,6 +24,10 @@
         <?php require_once('routes.php'); ?>
     </div>
 </div>
+<br><br1><br><br>
+<footer>
+    <?php require('Views/footer/index.html'); ?>
+</footer>
 
 </body>
 

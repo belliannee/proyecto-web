@@ -1,6 +1,6 @@
 <main role="main" class="col-md-12 ml-sm-auto col-lg-11 px-4">
 
-    <h2 class="mt-2">Administrativos</h2>
+    <h2 class="mt-2" align="center"> Listado de reportes </h2>
     <div class="table-responsive">
         <table class="table table-striped table-sm table-hover">
             <thead>
