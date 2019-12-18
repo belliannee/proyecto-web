@@ -1,5 +1,5 @@
 <?php
-class MSAdministrativaModel{
+class SecretariaAdministrativaModel{
     private $db;
  
     public function __construct(){
@@ -13,10 +13,18 @@ class MSAdministrativaModel{
         elseif($rol=='Secretaria Administrativa')
             $rol2 = 5;
 
-        $insertar = "INSERT INTO usuarios (nombre, apellido, cedula, direccion, correo_electronico, 'password', telefono, idRoles)
-		VALUES ('$nombre','$apellido','$cedula','$direccion','$email','$password',$telefono,$rol2)";
+        $insertar = "INSERT INTO usuarios (nombre, apellido, cedula, direccion, correo_electronico, password, telefono, idRoles)
+		VALUES ('$nombre','$apellido','$cedula','$direccion','$email','$password',$telefono,$rol2);";
 
-		$this->db->query($insertar);
+        $resultado = $this->db->query($insertar);
+                
+
+        if($resultado===true){
+            return $datos = true;
+        }
+        else{
+            return $datos = false;
+        }
         
     }
 }

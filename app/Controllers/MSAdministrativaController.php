@@ -47,8 +47,12 @@ class MSAdministrativaController
 		else{
 			header("location:?controller=PrincipalHome&&action=index");
 		}
+	}
 
-	
+	function usuarios(){
+		$msadministrativa = new MSAdministrativaModel();
+		$datos = $msadministrativa->listarU();
+		require_once('Views/MSAdministrativa/usuarios.php');
 	}
 
 }

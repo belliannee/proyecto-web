@@ -32,12 +32,14 @@
 </style>
 </head>
 <body>
-<div class="alert.succes">
-  <span class="closebtn">&times;</span>
-  Consulta exitosa.
-<br>
-</div> 
-<a class="btn btn-primary" href="/?controller=PrincipalHome&action=index">Volver</a>
+<div style="position:absolute; top:20%; left:45%">
+  <div class="alert-success">
+    <span class="closebtn">&times;</span>
+    Consulta exitosa.
+  </div> 
+  <br><br><br>
+  <a class="btn btn-primary" href="/?controller=PrincipalHome&action=index">Volver</a>
+</div>
 </body>
 
 </html>

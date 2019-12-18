@@ -38,5 +38,12 @@ class MSAdministrativaModel{
         }
         return $mensaje; */
     }
+    public function listarU(){
+        $consulta = $this->db->query("select * from usuarios;");
+        while($registros = $consulta->fetch_assoc()){
+            $this->msadministrativa[] = $registros;
+        }
+        return $this->msadministrativa;
+    }
 }
 ?>
